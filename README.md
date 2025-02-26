@@ -65,3 +65,23 @@ src/
   - **consts/**: Stores constant definitions and type declarations for the project.
   - **context/**: Manages global state and context for theme settings.
   - **utils/**: Utility functions and helpers are found in `utils.ts`.
+
+## Compile Docker
+
+1. **Build Docker Image:**
+
+   ```bash
+   docker build -t companies-app .
+   ```
+
+2. **Run Docker Container:**
+
+   ```bash
+   docker run -d -p 5173:5173 companies-app
+   ```
+
+3. **Access the Application:**
+
+   ```bash
+   http://localhost:5173
+   ```
